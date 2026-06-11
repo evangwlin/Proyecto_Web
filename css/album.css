@@ -1,0 +1,737 @@
+﻿/* ========================================================
+   ESTILOS ESPECÃƒÂFICOS PARA LA PÃƒÂGINA DE ÃƒÂLBUM (album.html)
+   Integra las variables y estÃƒÂ©tica de estilos.css
+   ======================================================== */
+
+.album-container {
+    max-width: 1400px;
+    margin: 40px auto 60px auto;
+    padding: 0 40px;
+    color: var(--texto-principal);
+}
+
+/* --- Layout Principal --- */
+.album-grid-principal {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+/* ==========================================
+   COLUMNA IZQUIERDA
+   ========================================== */
+.col-izq {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: sticky;
+    top: 80px;
+    align-self: flex-start;
+    height: fit-content;
+}
+
+/* Ocultar barra de scroll de la columna izquierda para mantener el diseÃƒÂ±o limpio */
+.col-izq::-webkit-scrollbar {
+    display: none;
+}
+.col-izq {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.album-portada-wrapper {
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    border: 1px solid var(--borde);
+}
+
+.album-portada-img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+}
+
+.tarjeta-lateral {
+    background-color: var(--fondo-tarjeta);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--borde);
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.tarjeta-lateral h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* Escuchar en */
+.plataforma-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.plataforma-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 12px;
+    border-radius: 8px;
+    color: var(--texto-principal);
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.03);
+    transition: background 0.2s;
+}
+
+.plataforma-item:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.plat-nombre {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+}
+
+.chevron {
+    color: var(--texto-secundario);
+}
+
+/* Tracklist */
+.tracklist-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.tracklist-header h3 {
+    margin-bottom: 0;
+}
+
+.tracklist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.track-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 5px;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    font-size: 0.9rem;
+}
+
+.track-item:last-child {
+    border-bottom: none;
+}
+
+.tr-num {
+    width: 20px;
+    color: var(--texto-secundario);
+    font-weight: 600;
+}
+
+.tr-titulo {
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 10px;
+}
+
+.tr-duracion {
+    color: var(--texto-secundario);
+    margin-right: 15px;
+}
+
+.btn-play-mini {
+    background: none;
+    border: none;
+    color: var(--texto-principal);
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.2s;
+}
+
+.btn-play-mini:hover {
+    opacity: 1;
+}
+
+.tracklist-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid var(--borde);
+    font-size: 0.9rem;
+    color: var(--texto-secundario);
+    font-weight: 600;
+}
+
+/* ==========================================
+   COLUMNA DERECHA PRINCIPAL (Info + Rating + Reviews)
+   ========================================== */
+.col-derecha-principal {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-info-grid {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 40px;
+    margin-bottom: 40px;
+    align-items: stretch; /* Ambas tarjetas tendrÃƒÂ¡n la misma altura */
+}
+
+/* Tarjeta de InformaciÃƒÂ³n */
+.tarjeta-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribuye el espacio si crece */
+}
+
+.genero-etiqueta {
+    display: inline-block;
+    align-self: flex-start;
+    background: rgba(29, 161, 242, 0.2);
+    color: #66bdf2;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.album-titulo-grande {
+    font-size: 2.6rem;
+    font-weight: 800;
+    margin-bottom: 5px;
+    line-height: 1.1;
+}
+
+.album-artista-fila {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.album-artista-fila h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #e0e0e0;
+}
+
+.album-submeta {
+    color: var(--texto-secundario);
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+}
+
+.album-tags {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.tag {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid var(--borde);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    color: var(--texto-principal);
+}
+
+.album-metadatos {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.meta-row {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    align-items: center;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.meta-row:last-child {
+    border-bottom: none;
+}
+
+.meta-key {
+    color: var(--texto-secundario);
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.meta-val {
+    color: var(--texto-principal);
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+/* ==========================================
+   COLUMNA DERECHA (COMMUNITY SCORE)
+   ========================================== */
+.community-score-card {
+    background-color: var(--fondo-tarjeta);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--borde);
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Agrupa los elementos de la nota */
+}
+
+.cs-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.cs-header h3 {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--texto-secundario);
+}
+
+.cs-numero {
+    margin-bottom: 5px;
+}
+
+.numero-grande {
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.numero-chico {
+    font-size: 1.5rem;
+    color: var(--texto-secundario);
+    font-weight: 600;
+}
+
+.cs-estrellas {
+    color: #3282cc;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.star-half {
+    color: var(--borde); /* Color gris/transparente para simular estrella vacÃƒÂ­a/mitad */
+}
+
+.cs-based {
+    font-size: 0.8rem;
+    color: var(--texto-secundario);
+    margin-bottom: 30px;
+}
+
+.cs-acciones-circulos {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.accion-circulo-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--texto-principal);
+}
+
+.circulo-btn {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid var(--borde);
+    color: var(--texto-principal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.circulo-btn:hover {
+    background: rgba(255,255,255,0.1);
+    transform: scale(1.05);
+}
+
+.cs-divisor {
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 5px 0;
+    margin-top: auto; /* Empuja los botones y rating rate al fondo de la tarjeta */
+}
+
+.cs-rate h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.estrellas-vacias {
+    font-size: 1.8rem;
+    color: var(--texto-secundario);
+    letter-spacing: 5px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.estrellas-vacias:hover {
+    color: #3282cc;
+}
+
+.cs-botones-main {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.btn-block {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #1da1f2, #1172ab);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #38b4ff, #178bcf);
+    box-shadow: 0 6px 15px rgba(29, 161, 242, 0.2);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: #ffffff;
+    border: 1px solid var(--borde);
+}
+
+.btn-secondary:hover {
+    background: rgba(255,255,255,0.05);
+}
+
+/* ==========================================
+   SECCIÃƒâ€œN REVIEWS (Medio)
+   ========================================== */
+.reviews-seccion {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+
+.reviews-header {
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reviews-header h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.enlace-ver-mas {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--texto-secundario);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.enlace-ver-mas:hover {
+    color: var(--texto-principal);
+}
+
+.reviews-divisor {
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 40px 0;
+}
+
+.lista-reviews-completas {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.review-card, .review-mini-card {
+    background-color: var(--fondo-tarjeta);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--borde);
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    gap: 15px;
+    position: relative;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.review-card:hover, .review-mini-card:hover {
+    background-color: rgba(29, 161, 242, 0.03);
+    border-color: rgba(29, 161, 242, 0.2);
+    box-shadow: 0 6px 15px rgba(29, 161, 242, 0.1);
+}
+
+.review-avatar img, .review-avatar-mini img {
+    border-radius: 50%;
+}
+.review-avatar img { width: 50px; height: 50px; }
+.review-avatar-mini img { width: 40px; height: 40px; }
+
+.review-contenido {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.r-username {
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 2px;
+}
+
+.r-sub-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+    margin-bottom: 12px;
+}
+
+.r-puntaje { 
+    color: #3282cc; 
+    font-weight: 700;
+}
+
+.r-separador {
+    color: var(--texto-secundario);
+}
+
+.r-fecha { 
+    color: var(--texto-secundario); 
+}
+
+.r-texto {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.r-interacciones {
+    display: flex;
+    gap: 20px;
+    color: var(--texto-secundario);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.r-interacciones span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.r-interacciones span:hover {
+    color: var(--texto-principal);
+}
+
+.btn-more-options {
+    background: none;
+    border: none;
+    color: var(--texto-secundario);
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.btn-more-options:hover { color: var(--texto-principal); }
+
+
+.reviews-recientes-seccion {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.reviews-recientes-seccion h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.reviews-recientes-seccion .lista-reviews-completas {
+    /* Mismo layout de las completas */
+}
+
+.ver-todas-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* ==========================================
+   SECCIÃƒâ€œN RELACIONADOS (Abajo)
+   ========================================== */
+.albumes-relacionados {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.relacionados-col {
+    background-color: var(--fondo-tarjeta);
+    border: 1px solid var(--borde);
+    border-radius: 12px;
+    padding: 25px;
+}
+
+.relacionados-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.relacionados-header h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.rel-acciones {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.rel-acciones a {
+    color: var(--texto-secundario);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.rel-acciones a:hover {
+    color: var(--texto-principal);
+}
+
+.btn-rel-nav {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid var(--borde);
+    color: var(--texto-principal);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.btn-rel-nav:hover { background: rgba(255,255,255,0.1); }
+
+.relacionados-grid {
+    display: flex;
+    gap: 15px;
+}
+
+.album-mini {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
+}
+
+.album-mini:hover {
+    background-color: rgba(255, 255, 255, 0.02);
+    border-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.portada-rel {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.album-mini h4 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.album-mini p {
+    font-size: 0.8rem;
+    color: var(--texto-secundario);
+}
+
+/* Responsividad bÃƒÂ¡sica (se puede expandir) */
+@media (max-width: 1100px) {
+    .album-grid-principal {
+        grid-template-columns: 1fr;
+    }
+    .top-info-grid {
+        grid-template-columns: 1fr;
+    }
+    .albumes-relacionados {
+        grid-template-columns: 1fr;
+    }
+}

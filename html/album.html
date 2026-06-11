@@ -1,0 +1,513 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eclipse - Aurora Waves</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilos.css?v=639167404711385714">
+    <link rel="stylesheet" href="../css/album.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="nav-logo"> <span>Logo</span></div>
+        <div class="nav-centro d-flex justify-content-center align-items-center flex-grow-1">
+            <div class="menu-contenedor">
+                <button id="btn-menu" class="btn-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                </button>
+                <div class="menu-desplegable" id="menu-desplegable">
+                    <div class="menu-seccion">
+                        <h3>Descubrir</h3>
+                        <ul>
+                            <li><a href="#">Tendencias</a></li>
+                            <li><a href="#">Lanzamientos de la Semana</a></li>
+                            <li><a href="#">Top 100 Álbumes</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-seccion">
+                        <h3>Recomendaciones</h3>
+                        <ul>
+                            <li><a href="resultados.html">Explorar</a></li>
+                            <li><a href="#">Artistas y Bandas</a></li>
+                            <li><a href="#">Álbumes y EPs</a></li>
+                            <li><a href="#">Géneros y Subgéneros</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-seccion">
+                        <h3>Comunidad</h3>
+                        <ul>
+                            <li><a href="#">Últimas Reseñas</a></li>
+                            <li><a href="#">Críticas Destacadas</a></li>
+                            <li><a href="#">Listas de Usuarios</a></li>
+                            <li><a href="#">Debates y Foros</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-seccion">
+                        <h3>Rankings</h3>
+                        <ul>
+                            <li><a href="#">Álbumes Mejor Valorados</a></li>
+                            <li><a href="#">Artistas Mejor Valorados</a></li>
+                            <li><a href="#">Rankings por Género</a></li>
+                        </ul>
+                    </div>
+                    <div class="botones-menu-movil">
+                        <a href="registro.html" class="btn-registro-movil">Registrarse</a>
+                        <a href="login.html" class="btn-ingreso-movil">Iniciar sesión</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="nav-buscador">
+                <button id="btn-filtro" class="btn-icon">Filtros</button>
+                <div class="filtro-dropdown panel-ancho" id="filtro-dropdown">
+                    <div class="filtro-categoria">
+                        <h4 class="filtro-titulo">Buscar en</h4>
+                        <div class="filtro-submenu">
+                            <label class="filtro-label">
+                                <input type="radio" name="buscarEn" value="todo" class="filtro-radio" checked> Todo
+                            </label>
+                            <label class="filtro-label">
+                                <input type="radio" name="buscarEn" value="album" class="filtro-radio"> Álbum
+                            </label>
+                            <label class="filtro-label">
+                                <input type="radio" name="buscarEn" value="artista" class="filtro-radio"> Artista
+                            </label>
+                            <label class="filtro-label">
+                                <input type="radio" name="buscarEn" value="usuario" class="filtro-radio"> Usuario
+                            </label>
+                            <label class="filtro-label">
+                                <input type="radio" name="buscarEn" value="cancion" class="filtro-radio"> Canciones
+                            </label>
+                            <label class="filtro-label">
+                                <input type="radio" name="buscarEn" value="lista" class="filtro-radio"> Listas
+                            </label>
+                        </div>
+                    </div>
+                    <div class="filtro-categoria" id="categoria-tipo">
+                        <h4 class="filtro-titulo">Tipo</h4>
+                        <div id="filtros-tipos" class="filtro-submenu">
+                        </div>
+                    </div>
+                    <div class="filtro-categoria" id="categoria-anios">
+                        <h4 class="filtro-titulo">Año exacto</h4>
+                        <div class="filtro-submenu" style="padding: 15px; min-width: 150px;">
+                            <input type="number" id="filtro-input-anio" class="filtro-input-text" placeholder="Ej: 2024" min="1900" max="2100">
+                        </div>
+                    </div>
+                    <div class="filtro-categoria" id="categoria-generos">
+                        <h4 class="filtro-titulo">Géneros</h4>
+                        <div id="filtros-generos" class="filtro-submenu">
+                        </div>
+                    </div>
+                </div>
+                <input type="text" id="input-buscador" placeholder="Buscar..." class="buscador">
+                <svg class="icono-lupa" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+            </div>
+        </div>
+        <div class="nav-opciones d-flex justify-content-end align-items-center gap-2">
+            <a href="registro.html" class="btn-registro">Registrarse</a>
+            <a href="login.html" class="btn-ingreso">Iniciar sesión</a>
+        </div>
+    </header>
+
+    <main class="album-container" style="opacity: 0; transition: opacity 0.15s ease;">
+        
+        <!-- TOP SECTION: 3 Columns -->
+        <section class="album-grid-principal">
+            
+            <!-- LEFT COLUMN -->
+            <div class="col-izq">
+                <div class="album-portada-wrapper">
+                    <img id="album-cover" src="../Archivos/Albumes/Seccion destacados/Deadbeat-Tame Impala_album_cover.jpg" alt="Album Cover" class="album-portada-img">
+                </div>
+
+                <div class="tarjeta-lateral escuchar-en">
+                    <h3>Escuchar en</h3>
+                    <div class="plataforma-lista">
+                        <a href="#" class="plataforma-item">
+                            <span class="plat-nombre"><img src="https://cdn.simpleicons.org/spotify/1DB954" alt="Spotify" width="20" height="20"> Spotify</span>
+                            <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                        </a>
+                        <a href="#" class="plataforma-item">
+                            <span class="plat-nombre"><img src="https://cdn.simpleicons.org/youtubemusic/FF0000" alt="YouTube Music" width="20" height="20"> YouTube Music</span>
+                            <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                        </a>
+                        <a href="#" class="plataforma-item">
+                            <span class="plat-nombre"><img src="https://cdn.simpleicons.org/applemusic/FA243C" alt="Apple Music" width="20" height="20"> Apple Music</span>
+                            <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                        </a>
+                        <a href="#" class="plataforma-item">
+                            <span class="plat-nombre"><img src="https://cdn.simpleicons.org/tidal/ffffff" alt="Tidal" width="20" height="20"> Tidal</span>
+                            <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="tarjeta-lateral tracklist-tarjeta">
+                    <div class="tracklist-header">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+                        <h3>Tracklist</h3>
+                    </div>
+                    <ul class="tracklist" id="album-tracklist">
+                        <li class="track-item"><span class="tr-num">1</span> <span class="tr-titulo">Into The Light</span> <span class="tr-duracion">1:42</span></li>
+                        <li class="track-item"><span class="tr-num">2</span> <span class="tr-titulo">Fading Colors</span> <span class="tr-duracion">4:12</span></li>
+                        <li class="track-item"><span class="tr-num">3</span> <span class="tr-titulo">Echoes</span> <span class="tr-duracion">3:58</span></li>
+                        <li class="track-item"><span class="tr-num">4</span> <span class="tr-titulo">Northern Lights</span> <span class="tr-duracion">4:56</span></li>
+                        <li class="track-item"><span class="tr-num">5</span> <span class="tr-titulo">Drown In You</span> <span class="tr-duracion">3:37</span></li>
+                        <li class="track-item"><span class="tr-num">6</span> <span class="tr-titulo">Eclipse</span> <span class="tr-duracion">5:01</span></li>
+                        <li class="track-item"><span class="tr-num">7</span> <span class="tr-titulo">Parallel Skies</span> <span class="tr-duracion">4:28</span></li>
+                        <li class="track-item"><span class="tr-num">8</span> <span class="tr-titulo">Through The Silence</span> <span class="tr-duracion">4:33</span></li>
+                        <li class="track-item"><span class="tr-num">9</span> <span class="tr-titulo">Another Day</span> <span class="tr-duracion">3:26</span></li>
+                        <li class="track-item"><span class="tr-num">10</span> <span class="tr-titulo">Until We Fade</span> <span class="tr-duracion">5:10</span></li>
+                    </ul>
+                    <div class="tracklist-footer">
+                        <span>Total</span>
+                        <span>41:03</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT MAIN COLUMN (Info, Rating, Reviews) -->
+            <div class="col-derecha-principal">
+                
+                <div class="top-info-grid">
+                    <!-- INFO SECTION -->
+                    <div class="tarjeta-info tarjeta-lateral">
+                        <h1 id="album-titulo" class="album-titulo-grande">Eclipse</h1>
+                        <div class="album-artista-fila">
+                            <h2 id="album-artista">Aurora Waves</h2>
+                        </div>
+                        <p class="album-submeta">12 de mayo de 2024 • 10 canciones, 41 min 03 segundos</p>
+                        
+                        <div class="album-metadatos">
+                            <div class="meta-row">
+                                <span class="meta-key"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg> Tipo</span>
+                                <span id="album-tipo" class="meta-val">Álbum</span>
+                            </div>
+                            <div class="meta-row">
+                                <span class="meta-key"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> Duración</span>
+                                <span id="album-duracion" class="meta-val">41:03</span>
+                            </div>
+                            <div class="meta-row">
+                                <span class="meta-key"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg> Fecha de publicación</span>
+                                <span id="album-fecha" class="meta-val">12 de mayo de 2024</span>
+                            </div>
+                            <div class="meta-row">
+                                <span class="meta-key"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg> Géneros</span>
+                                <span id="album-generos" class="meta-val">Shoegaze, Dream Pop</span>
+                            </div>
+                            <div class="meta-row">
+                                <span class="meta-key"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg> Subgéneros</span>
+                                <span id="album-subgeneros" class="meta-val">Alternative Rock, Indie Rock</span>
+                            </div>
+                            <div class="meta-row">
+                                <span class="meta-key"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg> Idioma</span>
+                                <span id="album-idioma" class="meta-val">Inglés</span>
+                            </div>
+                            <div class="meta-row">
+                                <span class="meta-key"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="3"></circle></svg> Sello discográfico</span>
+                                <span id="album-sello" class="meta-val">Lunar Echo Records</span>
+                            </div>
+                            <div class="meta-row">
+                                <span class="meta-key"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg> Productor</span>
+                                <span id="album-productor" class="meta-val">J. Northfield</span>
+                            </div>
+                            <div class="meta-row">
+                                <span class="meta-key"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg> Formato</span>
+                                <span id="album-formato" class="meta-val">Digital, CD, Vinilo</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- RATING SECTION -->
+                    <div id="album-rating" class="community-score-card">
+                    <div class="cs-header">
+                        <h3>PUNTUACIÓN DE LA COMUNIDAD</h3>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                    </div>
+                    <div class="cs-numero">
+                        <span class="numero-grande">8.7</span><span class="numero-chico">/10</span>
+                    </div>
+                    <div class="cs-estrellas">
+                        ★★★★<span class="star-half">★</span>
+                    </div>
+                    <p id="album-ratings-count" class="cs-based">Basado en 2,341 calificaciones</p>
+                    
+                    <div class="cs-acciones-circulos">
+                        <div class="accion-circulo-item">
+                            <button class="circulo-btn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path></svg></button>
+                            <span>Escuchar</span>
+                        </div>
+                        <div class="accion-circulo-item">
+                            <button class="circulo-btn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></button>
+                            <span>Favorito</span>
+                        </div>
+                        <div class="accion-circulo-item">
+                            <button class="circulo-btn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg></button>
+                            <span>Para escuchar</span>
+                        </div>
+                    </div>
+
+                    <div class="cs-divisor"></div>
+
+                    <div class="cs-rate">
+                        <h4>Calificar álbum</h4>
+                        <div class="estrellas-vacias">☆ ☆ ☆ ☆ ☆</div>
+                    </div>
+
+                    <div class="cs-botones-main">
+                        <button class="btn-block btn-primary">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>
+                            Escribir reseña
+                        </button>
+                        <button class="btn-block btn-secondary">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                            Añadir a colección
+                        </button>
+                    </div>
+                </div>
+                </div>
+                <!-- END TOP INFO GRID -->
+
+                <!-- MIDDLE SECTION: Reviews (Inside Right Main Column) -->
+                <section class="reviews-seccion">
+                    <div class="reviews-header">
+                        <h2>Reviews Populares</h2>
+                        <a href="#" class="enlace-ver-mas">Ver reseñas más populares</a>
+                    </div>
+
+                    <div class="lista-reviews-completas">
+                        
+                        <!-- Review 1 -->
+                        <div class="review-card">
+                            <div class="review-avatar"><img src="https://ui-avatars.com/api/?name=S&background=333&color=fff" alt="Avatar"></div>
+                            <div class="review-contenido">
+                                <span class="r-username">SonicDreamer</span>
+                                <div class="r-sub-info">
+                                    <span class="r-puntaje">9.5/10</span>
+                                    <span class="r-separador">-</span>
+                                    <span class="r-fecha">15 de mayo de 2024</span>
+                                </div>
+                                <p class="r-texto">Una obra sólida y coherente. Aurora Waves logra un equilibrio perfecto entre atmósferas etéreas y momentos de explosión sonora. Sin duda, uno de los mejores álbumes del año.</p>
+                                <div class="r-interacciones">
+                                    <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg> 142</span>
+                                    <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg> 18</span>
+                                </div>
+                            </div>
+                            <button class="btn-more-options"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg></button>
+                        </div>
+
+                        <!-- Review 2 -->
+                        <div class="review-card">
+                            <div class="review-avatar"><img src="https://ui-avatars.com/api/?name=I&background=552&color=fff" alt="Avatar"></div>
+                            <div class="review-contenido">
+                                <span class="r-username">indie_heart</span>
+                                <div class="r-sub-info">
+                                    <span class="r-puntaje">10/10</span>
+                                    <span class="r-separador">-</span>
+                                    <span class="r-fecha">14 de mayo de 2024</span>
+                                </div>
+                                <p class="r-texto">Me atrapó desde la primera escucha. 'Eclipse' es un viaje emocional de principio a fin. Imprescindible para los amantes del shoegaze.</p>
+                                <div class="r-interacciones">
+                                    <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg> 98</span>
+                                    <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg> 7</span>
+                                </div>
+                            </div>
+                            <button class="btn-more-options"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg></button>
+                        </div>
+
+                    </div>
+
+                    <div class="reviews-divisor"></div>
+
+                    <div class="reviews-recientes-seccion">
+                        <div class="reviews-header">
+                            <h2>Reseñas Recientes</h2>
+                            <a href="#" class="enlace-ver-mas">Ver reseñas más recientes</a>
+                        </div>
+                        
+                        <div class="lista-reviews-completas">
+                            
+                            <!-- Review Reciente 1 -->
+                            <div class="review-card">
+                                <div class="review-avatar"><img src="https://ui-avatars.com/api/?name=M&background=444&color=fff" alt="Avatar"></div>
+                                <div class="review-contenido">
+                                    <span class="r-username">Melómano87</span>
+                                    <div class="r-sub-info">
+                                        <span class="r-puntaje">6.5/10</span>
+                                        <span class="r-separador">-</span>
+                                        <span class="r-fecha">8 de mayo de 2024</span>
+                                    </div>
+                                    <p class="r-texto">Buen álbum, aunque algunos temas se sienten repetitivos. Le falta un poco de innovación respecto a sus trabajos anteriores.</p>
+                                    <div class="r-interacciones">
+                                        <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg> 12</span>
+                                        <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg> 2</span>
+                                    </div>
+                                </div>
+                                <button class="btn-more-options"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg></button>
+                            </div>
+
+                            <!-- Review Reciente 2 -->
+                            <div class="review-card">
+                                <div class="review-avatar"><img src="https://ui-avatars.com/api/?name=S&background=444&color=fff" alt="Avatar"></div>
+                                <div class="review-contenido">
+                                    <span class="r-username">SoundLover</span>
+                                    <div class="r-sub-info">
+                                        <span class="r-puntaje">9.0/10</span>
+                                        <span class="r-separador">-</span>
+                                        <span class="r-fecha">6 de mayo de 2024</span>
+                                    </div>
+                                    <p class="r-texto">Cada canción tiene su propio mundo. Me encantó la producción vocal.</p>
+                                    <div class="r-interacciones">
+                                        <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg> 4</span>
+                                        <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg> 0</span>
+                                    </div>
+                                </div>
+                                <button class="btn-more-options"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg></button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </section>
+                <!-- END REVIEWS -->
+                
+            </div>
+            <!-- END RIGHT MAIN COLUMN -->
+
+        </section>
+
+        <!-- BOTTOM SECTION: Related Albumes -->
+        <section class="albumes-relacionados">
+            
+            <div class="relacionados-col">
+                <div class="relacionados-header">
+                    <h2>Más del artista</h2>
+                    <div class="rel-acciones">
+                        <a href="#">Ver discografía completa</a>
+                    </div>
+                </div>
+                <div id="album-recomendaciones-grid" class="relacionados-grid">
+                    <div class="album-mini">
+                        <div class="portada-rel" style="background-image: url('../Archivos/Albumes/Seccion novedades/GREENGREEN-Cortis_album_cover.jpg'); background-size: cover;"></div>
+                        <h4>Luminous</h4>
+                        <p>2021</p>
+                    </div>
+                    <div class="album-mini">
+                        <div class="portada-rel" style="background-image: url('../Archivos/Albumes/Seccion novedades/Your Favorite Toy-Foo Figthers_album_cover.jpg'); background-size: cover;"></div>
+                        <h4>Waves</h4>
+                        <p>2019</p>
+                    </div>
+                    <div class="album-mini">
+                        <div class="portada-rel" style="background-image: url('../Archivos/Albumes/Seccion novedades/UNIQUE-P1HARMONY_album_cover.jpg'); background-size: cover;"></div>
+                        <h4>Lost Signals</h4>
+                        <p>2017</p>
+                    </div>
+                    <div class="album-mini">
+                        <div class="portada-rel" style="background-image: url('../Archivos/Albumes/Seccion destacados/LUX-ROSALÍA_album_cover.jpg'); background-size: cover;"></div>
+                        <h4>Afterglow</h4>
+                        <p>2015</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relacionados-col">
+                <div class="relacionados-header">
+                    <h2>Álbumes similares</h2>
+                    <div class="rel-acciones">
+                        <a href="#">Ver más</a>
+                    </div>
+                </div>
+                <div id="album-similares-grid" class="relacionados-grid">
+                    <div class="album-mini">
+                        <div class="portada-rel" style="background-image: url('../Archivos/Albumes/Seccion destacados/Deadbeat-Tame Impala_album_cover.jpg'); background-size:cover;"></div>
+                        <h4>Slowdive</h4>
+                        <p>Everything Is Alive 2023</p>
+                    </div>
+                    <div class="album-mini">
+                        <div class="portada-rel" style="background-color: #1a1a1a;"></div>
+                        <h4>DIIV</h4>
+                        <p>Frog In Boiling Water 2024</p>
+                    </div>
+                    <div class="album-mini">
+                        <div class="portada-rel" style="background-image: url('../Archivos/Albumes/Seccion novedades/Ascend--ZEROBASEONE_album_cover.jpg'); background-size:cover;"></div>
+                        <h4>M83</h4>
+                        <p>Fantasy 2023</p>
+                    </div>
+                    <div class="album-mini">
+                        <div class="portada-rel" style="background-image: url('../Archivos/Albumes/Seccion novedades/Dont Be Dumb-A$ap Rocky_album_cover.jpg'); background-size:cover;"></div>
+                        <h4>Beach House</h4>
+                        <p>Once Twice Melody 2022</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-contenido container-fluid row mx-auto">
+            <div class="footer-columna footer-branding col-12 col-lg-4 mb-4 mb-lg-0">
+                <p class="footer-logo">Aurora Waves</p>
+                <p>El ecosistema definitivo para melómanos y exploradores del sonido. Descubrí, compartí y conectá a través de la música.</p>
+                <div class="footer-newsletter">
+                    <p>Suscribite a nuestro newsletter:</p>
+                    <div class="newsletter-input-group">
+                        <input type="email" placeholder="Tu correo electrónico..." class="newsletter-input">
+                        <button class="btn-newsletter">Unirme</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-columna col-12 col-sm-6 col-lg-2 mb-4 mb-lg-0">
+                <h4>DESCUBRIR</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="resultados.html">Explorar</a></li>
+                    <li><a href="#">Lanzamientos</a></li>
+                    <li><a href="#">Top 100 Álbumes</a></li>
+                    <li><a href="#">Foros de Discusión</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-columna col-12 col-sm-6 col-lg-2 mb-4 mb-lg-0">
+                <h4>SOPORTE</h4>
+                <ul>
+                    <li><a href="contacto.html" class="btn-footer-contacto">Contacto & Feedback</a></li>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                    <li><a href="#">Centro de Ayuda</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-columna col-12 col-sm-6 col-lg-2 mb-4 mb-lg-0">
+                <h4>LEGAL</h4>
+                <ul>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#">Privacidad y Cookies</a></li>
+                    <li><a href="#">Directrices de la Comunidad</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-redes-premium">
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" title="Instagram"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+                <a href="https://x.com" target="_blank" rel="noopener noreferrer" title="Twitter / X"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg></a>
+            </div>
+            <p>© 2026 Aurora Waves — Diseñado por Evangelina Chavez.</p>
+        </div>
+    </footer>
+
+    <script src="../jscrip/script.js"></script>
+</body>
+</html>
+
+
+
+
+

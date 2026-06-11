@@ -1,0 +1,394 @@
+﻿/* ========================================================
+   ESTILOS ESPECÃFICOS PARA LA PÃGINA DE ARTISTA (artista.html)
+   ======================================================== */
+
+.artista-container {
+    max-width: 100%;
+    margin: 0; 
+    color: var(--texto-principal);
+}
+
+/* Hero Banner */
+.artista-hero-banner-limpio {
+    position: relative;
+    width: 100%;
+    padding: 60px 40px 60px 40px;
+    background-color: var(--fondo);
+    border-bottom: 1px solid var(--borde);
+    margin-bottom: 50px;
+}
+
+.artista-header-unificado {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.artista-col-izq {
+    flex: 0 0 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.artista-col-der {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.artista-foto-wrapper {
+    width: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6), 0 0 0 8px rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    aspect-ratio: 1 / 1;
+    position: relative;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.artista-foto-wrapper:hover {
+    transform: scale(1.05);
+}
+
+.artista-foto-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.artista-info-detalle {
+    display: flex;
+    flex-direction: column;
+}
+
+.artista-nombre-grande {
+    font-size: 4.5rem;
+    font-weight: 900;
+    margin-bottom: 15px;
+    line-height: 1.1;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: linear-gradient(to right, #ffffff, #3282cc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+.icon-verified {
+    filter: drop-shadow(0 2px 5px rgba(59, 130, 246, 0.5));
+}
+
+.artista-bio {
+    color: #cbd5e1;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    max-width: 800px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+/* Botones de AcciÃ³n y Redes */
+.artista-acciones-sociales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.seguidores-count-simple {
+    font-size: 1.1rem;
+    color: var(--texto-secundario);
+    text-align: center;
+}
+
+.seguidores-count-simple strong {
+    color: var(--texto-principal);
+    font-size: 1.25rem;
+}
+
+.btn-secundario-seguir {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px 24px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.btn-secundario-seguir:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.redes-artista {
+    display: flex;
+    gap: 12px;
+}
+
+.icono-red {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+    color: #cbd5e1;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.2s;
+}
+
+.icono-red:hover {
+    background: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+/* Glassmorphism Metadatos */
+.artista-metadatos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    background-color: var(--fondo-tarjeta);
+    padding: 25px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.meta-row {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.meta-key {
+    color: #94a3b8;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+
+.meta-val {
+    color: var(--texto-principal);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Contenido Principal */
+.artista-contenido-principal {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.seccion-contenido {
+    margin-bottom: 70px;
+}
+
+.seccion-header {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--borde);
+    padding-bottom: 15px;
+}
+
+.seccion-header h2 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.enlace-ver-mas {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--texto-secundario);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.enlace-ver-mas:hover {
+    color: var(--texto-principal);
+}
+
+/* Tracklist */
+.tracklist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.track-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    border-radius: 10px;
+    background: transparent;
+    border: 1px solid transparent;
+    text-decoration: none;
+    color: var(--texto-principal);
+    transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+    position: relative;
+    overflow: hidden;
+}
+
+.track-item:hover {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.tr-num {
+    width: 55px;
+    color: var(--texto-secundario);
+    font-weight: 700;
+    font-size: 1.1rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.tr-portada {
+    width: 48px;
+    height: 48px;
+    border-radius: 6px;
+    margin-right: 30px;
+    background-size: cover;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.tr-titulo {
+    flex: 1;
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+
+.tr-reproducciones {
+    color: #3282cc;
+    margin-right: 15px;
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+
+.tr-duracion {
+    color: var(--texto-secundario);
+    margin-right: 30px;
+}
+
+/* DiscografÃ­a Grid */
+.discografia-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.album-card {
+    background-color: var(--fondo-tarjeta);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 18px;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.album-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, transparent 100%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+}
+
+.album-card:hover {
+    background-color: var(--fondo-tarjeta-hover);
+    border-color: rgba(255, 255, 255, 0.15);
+}
+
+.portada-album {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    position: relative;
+}
+
+
+
+.album-card h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.album-card p {
+    font-size: 0.9rem;
+    color: #94a3b8;
+    font-weight: 500;
+}
+
+@media (max-width: 900px) {
+    .artista-header-unificado {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .artista-foto-wrapper {
+        flex: 0 0 250px;
+        width: 250px;
+    }
+    .artista-nombre-grande {
+        justify-content: center;
+        font-size: 3.5rem;
+    }
+    .artista-metadatos {
+        grid-template-columns: 1fr;
+    }
+    .artista-acciones {
+        justify-content: center;
+    }
+    .track-item {
+        flex-wrap: wrap;
+    }
+    .tr-reproducciones {
+        display: none;
+    }
+}

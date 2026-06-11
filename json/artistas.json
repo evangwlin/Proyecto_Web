@@ -1,0 +1,348 @@
+
+{
+    "artistasDetalle": {
+        "blur": {
+            "nombre": "Blur",
+            "genero": "Britpop, Alternative Rock, Indie Rock",
+            "añosActivos": "1988-presente",
+            "origen": "Londres, Inglaterra",
+            "miembros": "Damon Albarn, Graham Coxon, Alex James, Dave Rowntree",
+            "fotoPerfil": "../Archivos/Artistas/Blur.jpg",
+            "biografia": "Blur es una icónica banda británica formada en Londres en 1988 por Damon Albarn, Graham Coxon, Alex James y Dave Rowntree. Considerados una de las agrupaciones más importantes del movimiento Britpop, alcanzaron fama mundial durante los años noventa gracias a su capacidad para combinar melodías pegadizas, letras ingeniosas y una constante evolución musical. Álbumes como Parklife, The Great Escape y Blur los consolidaron como referentes del rock alternativo británico. A lo largo de su carrera exploraron diversos estilos, desde el pop y el rock hasta sonidos experimentales, dejando una huella fundamental en la música contemporánea.",
+            "seguidores": "12.500.000",
+            "redes": {
+                "spotify": "https://open.spotify.com/artist/blur",
+                "instagram": "https://instagram.com/blurofficial"
+            }
+        },
+
+        "david-bowie": {
+            "nombre": "David Bowie",
+            "genero": "Art Rock, Glam Rock, Pop Rock, Art Pop",
+            "añosActivos": "1962-2016",
+            "origen": "Londres, Inglaterra",
+            "miembros": "David Bowie",
+            "fotoPerfil": "../Archivos/Artistas/David Bowie.jpg",
+            "biografia": "David Bowie fue uno de los artistas más influyentes e innovadores de la historia de la música popular. Nacido en Londres en 1947, construyó una carrera marcada por la reinvención constante, creando personajes icónicos como Ziggy Stardust y explorando géneros tan diversos como glam rock, soul, electrónica, art rock y pop experimental. Su capacidad para combinar música, moda y arte visual lo convirtió en una figura cultural única. Con álbumes legendarios como The Rise and Fall of Ziggy Stardust, Heroes y Blackstar, Bowie dejó un legado que continúa inspirando a músicos y artistas de todo el mundo.",
+            "seguidores": "18.900.000",
+            "redes": {
+                "spotify": "https://open.spotify.com/artist/0oSGxfWSnnOXhD2fKuz2Gy",
+                "instagram": "https://instagram.com/davidbowie"
+            }
+        },
+
+        "enhypen": {
+            "nombre": "ENHYPEN",
+            "genero": "K-Pop, Pop, Dance Pop",
+            "añosActivos": "2020-presente",
+            "origen": "Seúl, Corea del Sur",
+            "miembros": "Jungwon, Heeseung, Jay, Jake, Sunghoon, Sunoo, Ni-ki",
+            "fotoPerfil": "../Archivos/Artistas/ENHYPEN.jpg",
+            "biografia": "ENHYPEN es un grupo surcoreano formado en 2020 a través del programa de supervivencia I-LAND. Integrado por Jungwon, Heeseung, Jay, Jake, Sunghoon, Sunoo y Ni-ki, el grupo debutó bajo BELIFT LAB y rápidamente se convirtió en uno de los actos más destacados de la cuarta generación del K-Pop. Su concepto combina elementos narrativos, fantasía y crecimiento personal, presentes en álbumes como BORDER, DIMENSION, DARK BLOOD y ROMANCE : UNTOLD. Gracias a sus sólidas presentaciones, su versatilidad musical y una base global de seguidores, ENHYPEN ha alcanzado reconocimiento internacional en tiempo récord.",
+            "seguidores": "15.800.000",
+            "redes": {
+                "spotify": "https://open.spotify.com/artist/5t5FqBwTcgKTaWmfEbwQY9",
+                "instagram": "https://instagram.com/enhypen"
+            }
+        },
+
+        "txt": {
+            "nombre": "TOMORROW X TOGETHER",
+            "genero": "K-Pop, Pop Rock, Alternative Pop, Synth Pop",
+            "añosActivos": "2019-presente",
+            "origen": "Seúl, Corea del Sur",
+            "miembros": "Soobin, Yeonjun, Beomgyu, Taehyun, Huening Kai",
+            "fotoPerfil": "../Archivos/Artistas/TOMORROW X TOGETHER.jpg",
+            "biografia": "TOMORROW X TOGETHER, conocido mundialmente como TXT, es un grupo surcoreano formado por Soobin, Yeonjun, Beomgyu, Taehyun y Huening Kai. Debutaron en 2019 bajo BIGHIT MUSIC y rápidamente destacaron por su propuesta visual, sus conceptos narrativos y su sonido versátil. A lo largo de su carrera han explorado géneros como pop, rock alternativo, synth-pop y R&B, desarrollando historias conectadas entre álbumes. Lanzamientos como The Chaos Chapter, minisode y The Name Chapter consolidaron su éxito global, convirtiéndolos en uno de los grupos más representativos de la nueva generación del K-Pop.",
+            "seguidores": "16.300.000",
+            "redes": {
+                "spotify": "https://open.spotify.com/artist/0ghlgldX5Dd6720Q3qFyQB",
+                "instagram": "https://instagram.com/txt_bighit"
+            }
+        },
+
+        "sabrina-carpenter": {
+            "nombre": "Sabrina Carpenter",
+            "genero": "Pop, Dance Pop, Contemporary Pop",
+            "añosActivos": "2011-presente",
+            "origen": "Quakertown, Pensilvania, Estados Unidos",
+            "miembros": "Sabrina Carpenter",
+            "fotoPerfil": "../Archivos/Artistas/Sabrina Carpenter.jpg",
+            "biografia": "Sabrina Carpenter es una cantante, compositora y actriz estadounidense que se ha consolidado como una de las figuras más destacadas del pop actual. Tras comenzar su carrera en la actuación durante su adolescencia, desarrolló paralelamente una exitosa trayectoria musical caracterizada por letras personales, melodías pegadizas y una evolución artística constante. Álbumes como Emails I Can't Send y Short n' Sweet la llevaron a alcanzar una enorme popularidad internacional. Su estilo combina pop contemporáneo, influencias dance y una fuerte identidad visual que conecta con millones de oyentes alrededor del mundo.",
+            "seguidores": "21.700.000",
+            "redes": {
+                "spotify": "https://open.spotify.com/artist/74KM79TiuVKeVCqs8QtB0B",
+                "instagram": "https://instagram.com/sabrinacarpenter"
+            }
+        },
+
+        "mac-demarco": {
+            "nombre": "Mac DeMarco",
+            "genero": "Indie Rock, Lo-Fi, Dream Pop, Soft Rock",
+            "añosActivos": "2008-presente",
+            "origen": "Duncan, Columbia Británica, Canadá",
+            "miembros": "Mac DeMarco",
+            "fotoPerfil": "../Archivos/Artistas/Mac DeMarco.jpg",
+            "biografia": "Mac DeMarco es un músico, cantante y compositor canadiense reconocido por su estilo relajado, su característico sonido lo-fi y su personalidad desenfadada. Desde comienzos de la década de 2010 se convirtió en una figura clave del indie rock moderno gracias a álbumes como 2, Salad Days, This Old Dog y Here Comes the Cowboy. Su música mezcla elementos de rock alternativo, dream pop, soft rock y folk, creando una atmósfera íntima y distintiva. Admirado por su autenticidad y creatividad, DeMarco ha influido en una nueva generación de artistas independientes alrededor del mundo.",
+            "seguidores": "11.400.000",
+            "redes": {
+                "spotify": "https://open.spotify.com/artist/3Sz7ZnJQBIHsXLUSo0OQtM",
+                "instagram": "https://instagram.com/macdemarco"
+            }
+        },
+
+        "jamiroquai": {
+            "nombre": "Jamiroquai",
+            "genero": "Acid Jazz, Funk, Disco, Soul",
+            "añosActivos": "1992-presente",
+            "origen": "Londres, Inglaterra",
+            "miembros": "Jay Kay, Rob Harris, Matt Johnson, Paul Turner, Derrick McKenzie, Sola Akingbola",
+            "fotoPerfil": "../Archivos/Artistas/Jamiroquai.jpg",
+            "biografia": "Jamiroquai es una banda británica liderada por Jay Kay que se convirtió en uno de los máximos exponentes del acid jazz y el funk moderno durante los años noventa. Formada en 1992, alcanzó fama internacional gracias a su combinación de grooves inspirados en el funk clásico, elementos de soul, disco y electrónica. Álbumes como Emergency on Planet Earth, Travelling Without Moving y Synkronized definieron su sonido característico. Con éxitos globales y una estética visual inconfundible, Jamiroquai continúa siendo una referencia fundamental para artistas y aficionados de la música funk contemporánea.",
+            "seguidores": "8.900.000",
+            "redes": {
+                "spotify": "https://open.spotify.com/artist/6eUKZXaKkcviH0Ku9w2n3V",
+                "instagram": "https://instagram.com/jamiroquaihq"
+            }
+        },
+        "jeff-buckley": {
+            "nombre": "Jeff Buckley",
+            "genero": "Alternative Rock, Folk Rock, Singer-Songwriter, Dream Pop",
+            "añosActivos": "1991-1997",
+            "origen": "Anaheim, California, Estados Unidos",
+            "miembros": "Jeff Buckley",
+            "fotoPerfil": "../Archivos/Artistas/Jeff Buckley.jpg",
+            "biografia": "Jeff Buckley fue un cantante, compositor y guitarrista estadounidense reconocido por su extraordinario rango vocal y su capacidad para fusionar rock alternativo, folk, blues y jazz en un estilo profundamente emotivo. Alcanzó reconocimiento con su único álbum de estudio publicado en vida, Grace, considerado una de las obras más influyentes de los años noventa. Su interpretación de Hallelujah se convirtió en una de las versiones más célebres de la historia. A pesar de su corta carrera debido a su fallecimiento en 1997, Buckley dejó un legado artístico que continúa inspirando a músicos y oyentes de todo el mundo.",
+            "seguidores": "9.400.000",
+            "redes": {
+                "spotify": "https://open.spotify.com/artist/3nnQpaTvKb5jCQabZEFneJ",
+                "instagram": "https://instagram.com/jeffbuckley"
+            }
+        },
+
+        "kanye-west": {
+            "nombre": "Kanye West",
+            "genero": "Hip Hop, Rap, Experimental Hip Hop, Pop Rap",
+            "añosActivos": "1996-presente",
+            "origen": "Chicago, Illinois, Estados Unidos",
+            "miembros": "Kanye West",
+            "fotoPerfil": "../Archivos/Artistas/Kanye West.jpg",
+            "biografia": "Kanye West es un rapero, productor y diseñador estadounidense considerado una de las figuras más influyentes y controvertidas de la música contemporánea. Tras destacar como productor para artistas de renombre, debutó como solista con The College Dropout y revolucionó el hip hop mediante una constante experimentación sonora. Álbumes como Late Registration, Graduation, My Beautiful Dark Twisted Fantasy, Yeezus y Donda redefinieron los límites del género. Su impacto se extiende más allá de la música, abarcando moda, cultura popular y tendencias creativas que han marcado a varias generaciones de artistas.",
+            "seguidores": "24.800.000",
+            "redes": {
+                "spotify": "https://open.spotify.com/artist/5K4W6rqBFWDnAN6FQUkS6x",
+                "instagram": "https://instagram.com/ye"
+            }
+        },
+
+        "kendrick-lamar": {
+            "nombre": "Kendrick Lamar",
+            "genero": "Hip Hop, Conscious Hip Hop, Jazz Rap, West Coast Hip Hop",
+            "añosActivos": "2003-presente",
+            "origen": "Compton, California, Estados Unidos",
+            "miembros": "Kendrick Lamar",
+            "fotoPerfil": "../Archivos/Artistas/Kendrick Lamar.jpg",
+            "biografia": "Kendrick Lamar es un rapero, compositor y productor estadounidense ampliamente considerado uno de los artistas más importantes del siglo XXI. Su obra se caracteriza por letras complejas, narrativas profundas y una constante exploración de cuestiones sociales, políticas y personales. Álbumes como good kid, m.A.A.d city, To Pimp a Butterfly, DAMN. y GNX han recibido elogios de la crítica y numerosos premios. En 2018 se convirtió en el primer músico fuera de los géneros clásicos y jazz en recibir el Premio Pulitzer de Música, consolidando su posición como una figura histórica dentro del hip hop.",
+            "seguidores": "28.600.000",
+            "redes": {
+                "spotify": "https://open.spotify.com/artist/2YZyLoL8N0Wb9xBt1NhZWg",
+                "instagram": "https://instagram.com/kendricklamar"
+            }
+        },
+
+        "oasis": {
+            "nombre": "Oasis",
+            "genero": "Britpop, Alternative Rock, Rock",
+            "añosActivos": "1991-2009, 2024-presente",
+            "origen": "Mánchester, Inglaterra",
+            "miembros": "Liam Gallagher, Noel Gallagher, Andy Bell, Gem Archer, Paul Arthurs, Joey Waronker",
+            "fotoPerfil": "../Archivos/Artistas/Oasis.jpg",
+            "biografia": "Oasis es una de las bandas británicas más exitosas e influyentes de todos los tiempos. Formada en Mánchester a comienzos de los años noventa, alcanzó fama mundial gracias a himnos generacionales como Wonderwall, Don't Look Back in Anger y Live Forever. Liderados por los hermanos Liam y Noel Gallagher, se convirtieron en el principal exponente del Britpop junto a Blur. Álbumes como Definitely Maybe y (What's the Story) Morning Glory? son considerados clásicos del rock británico. Su legado cultural continúa vigente décadas después de su aparición en la escena musical internacional.",
+            "seguidores": "17.500.000",
+            "redes": {
+                "spotify": "https://open.spotify.com/artist/2DaxqgrOhkeH0fpeiQq2f4",
+                "instagram": "https://instagram.com/oasis"
+            }
+        },
+
+        "the-smiths": {
+            "nombre": "The Smiths",
+            "genero": "Indie Rock, Alternative Rock, Jangle Pop",
+            "añosActivos": "1982-1987",
+            "origen": "Mánchester, Inglaterra",
+            "miembros": "Morrissey, Johnny Marr, Andy Rourke, Mike Joyce",
+            "fotoPerfil": "../Archivos/Artistas/The Smiths.jpg",
+            "biografia": "The Smiths fue una influyente banda británica formada en Mánchester durante la década de 1980. Integrada por Morrissey, Johnny Marr, Andy Rourke y Mike Joyce, el grupo desarrolló un sonido distintivo basado en guitarras melódicas, letras introspectivas y una marcada sensibilidad alternativa. Aunque su carrera fue relativamente breve, publicaron álbumes fundamentales como The Queen Is Dead, Meat Is Murder y Strangeways, Here We Come. Su influencia fue decisiva para el desarrollo del indie rock y el rock alternativo posterior, convirtiéndolos en una de las agrupaciones más admiradas y estudiadas de la música moderna.",
+            "seguidores": "13.200.000",
+            "redes": {
+                "spotify": "https://open.spotify.com/artist/3yY2gUcIsjMr8hjo51PoJ8",
+                "instagram": "https://instagram.com/thesmithsofficial"
+            }
+        },
+        "foo-fighters": {
+            "nombre": "Foo Fighters",
+            "genero": "Alternative Rock, Post-Grunge, Hard Rock",
+            "añosActivos": "1994-presente",
+            "origen": "Seattle, Washington, Estados Unidos",
+            "miembros": "Dave Grohl, Nate Mendel, Pat Smear, Chris Shiflett, Rami Jaffee, Josh Freese",
+            "fotoPerfil": "../Archivos/Artistas/Foo Fighters.jpg",
+            "biografia": "Foo Fighters es una banda estadounidense fundada en 1994 por Dave Grohl tras la disolución de Nirvana. Lo que comenzó como un proyecto solista rápidamente evolucionó hacia una de las agrupaciones de rock más exitosas y duraderas de las últimas décadas. Con una combinación de rock alternativo, post-grunge y hard rock, han publicado álbumes aclamados como The Colour and the Shape, Wasting Light y But Here We Are. Reconocidos por sus enérgicas presentaciones en vivo y la versatilidad de Grohl como líder, Foo Fighters se ha convertido en un referente esencial del rock moderno.",
+            "seguidores": "19.800.000",
+            "redes": {
+                "spotify": "https://open.spotify.com/artist/7jy3rLJdDQY21OgRLCZ9sD",
+                "instagram": "https://instagram.com/foofighters"
+            }
+        },
+
+        "a$ap-rocky": {
+            "nombre": "A$AP Rocky",
+            "genero": "Hip Hop, Trap, Cloud Rap",
+            "añosActivos": "2007-presente",
+            "origen": "Nueva York, Estados Unidos",
+            "miembros": "A$AP Rocky",
+            "fotoPerfil": "../Archivos/Artistas/A$AP Rocky.jpg",
+            "biografia": "A$AP Rocky es un rapero, compositor y productor estadounidense que alcanzó fama internacional gracias a su estilo innovador y su capacidad para fusionar hip hop, moda y cultura visual. Miembro destacado del colectivo A$AP Mob, irrumpió en la escena musical con mixtapes que redefinieron el sonido del rap de comienzos de la década de 2010. Álbumes como LONG.LIVE.A$AP, AT.LONG.LAST.A$AP y TESTING consolidaron su reputación como uno de los artistas más creativos de su generación. Su influencia se extiende también al mundo de la moda y el diseño contemporáneo.",
+            "seguidores": "18.400.000",
+            "redes": {
+                "spotify": "https://open.spotify.com/artist/13ubrt8QOOCPljQ2FL1Kca",
+                "instagram": "https://instagram.com/asaprocky"
+            }
+        },
+
+        "aespa": {
+            "nombre": "aespa",
+            "genero": "K-Pop, Dance Pop, EDM, Hyperpop",
+            "añosActivos": "2020-presente",
+            "origen": "Seúl, Corea del Sur",
+            "miembros": "Karina, Winter, Giselle, Ningning",
+            "fotoPerfil": "../Archivos/Artistas/AESPA.jpg",
+            "biografia": "aespa es un grupo femenino surcoreano formado por SM Entertainment en 2020. Integrado por Karina, Winter, Giselle y Ningning, el grupo destacó desde su debut por combinar música, tecnología y conceptos futuristas dentro de un universo narrativo propio. Canciones como Next Level, Savage, Drama y Supernova impulsaron su popularidad global y las posicionaron entre las agrupaciones más exitosas de la cuarta generación del K-Pop. Su sonido mezcla elementos de pop, EDM, hip hop y electrónica experimental, convirtiéndolas en una referencia innovadora dentro de la industria musical coreana.",
+            "seguidores": "17.600.000",
+            "redes": {
+                "spotify": "https://open.spotify.com/artist/6YVMFz59CuY7ngCxTxjpxE",
+                "instagram": "https://instagram.com/aespa_official"
+            }
+        },
+
+        "cortis": {
+            "nombre": "CORTIS",
+            "genero": "K-Pop, Alternative Pop, Hip Hop",
+            "añosActivos": "2025-presente",
+            "origen": "Corea del Sur",
+            "miembros": "CORTIS",
+            "fotoPerfil": "../Archivos/Artistas/CORTIS.jpg",
+            "biografia": "CORTIS es un proyecto musical surcoreano de nueva generación que combina elementos de K-Pop, hip hop alternativo y sonidos experimentales. Su propuesta artística destaca por una estética moderna, producciones innovadoras y una fuerte identidad visual. A pesar de contar con una discografía todavía reducida, el proyecto ha despertado interés entre los seguidores del pop coreano gracias a su enfoque creativo y a la mezcla de géneros que caracteriza sus lanzamientos. Con una imagen fresca y una dirección musical en constante evolución, CORTIS representa una de las propuestas emergentes más interesantes de su escena.",
+            "seguidores": "2.300.000",
+            "redes": {
+                "spotify": "https://x.com/cortis_bighit",
+                "instagram": "https://www.instagram.com/cortis"
+            }
+        },
+
+        "drake": {
+            "nombre": "Drake",
+            "genero": "Hip Hop, R&B, Pop Rap",
+            "añosActivos": "2001-presente",
+            "origen": "Toronto, Ontario, Canadá",
+            "miembros": "Drake",
+            "fotoPerfil": "../Archivos/Artistas/Drake.jpg",
+            "biografia": "Drake es un rapero, cantante y compositor canadiense considerado una de las figuras más influyentes de la música del siglo XXI. Tras iniciar su carrera como actor, se convirtió en una superestrella global gracias a una propuesta que combina hip hop, R&B y pop contemporáneo. Álbumes como Take Care, Nothing Was the Same, Views y For All The Dogs han dominado las listas internacionales durante años. Su capacidad para adaptarse a nuevas tendencias y generar éxitos masivos lo ha consolidado como uno de los artistas más exitosos y escuchados de la historia reciente.",
+            "seguidores": "31.500.000",
+            "redes": {
+                "spotify": "https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4",
+                "instagram": "https://instagram.com/champagnepapi"
+            }
+        },
+
+        "le-sserafim": {
+            "nombre": "LE SSERAFIM",
+            "genero": "K-Pop, Dance Pop, EDM",
+            "añosActivos": "2022-presente",
+            "origen": "Seúl, Corea del Sur",
+            "miembros": "Sakura, Kim Chaewon, Huh Yunjin, Kazuha, Hong Eunchae",
+            "fotoPerfil": "../Archivos/Artistas/LE SSERAFIM.jpg",
+            "biografia": "LE SSERAFIM es un grupo femenino surcoreano formado por Source Music y HYBE en 2022. Desde su debut llamaron la atención por su concepto centrado en la confianza, la ambición y la superación personal. Canciones como FEARLESS, ANTIFRAGILE, UNFORGIVEN y CRAZY las consolidaron como una de las agrupaciones más importantes de la cuarta generación del K-Pop. Su música combina pop, EDM, hip hop y elementos electrónicos modernos, mientras que sus presentaciones en vivo destacan por una coreografía exigente y una fuerte presencia escénica.",
+            "seguidores": "14.700.000",
+            "redes": {
+                "spotify": "https://open.spotify.com/artist/4SpbR6yFEvexJuaBpgAU5p",
+                "instagram": "https://instagram.com/le_sserafim"
+            }
+        },
+
+        "p1harmony": {
+            "nombre": "P1Harmony",
+            "genero": "K-Pop, Hip Hop, Pop",
+            "añosActivos": "2020-presente",
+            "origen": "Seúl, Corea del Sur",
+            "miembros": "Keeho, Theo, Jiung, Intak, Soul, Jongseob",
+            "fotoPerfil": "../Archivos/Artistas/P1Harmony.jpg",
+            "biografia": "P1Harmony es un grupo masculino surcoreano formado por FNC Entertainment en 2020. Conformado por seis integrantes, el grupo ganó reconocimiento por su energía, talento vocal y enfoque musical basado en la fusión de pop, hip hop y R&B. Desde su debut han desarrollado una identidad propia mediante conceptos dinámicos y una fuerte participación de los miembros en el proceso creativo. Álbumes y sencillos exitosos les permitieron construir una sólida base de seguidores tanto en Corea del Sur como en el mercado internacional.",
+            "seguidores": "7.900.000",
+            "redes": {
+                "spotify": "https://open.spotify.com/artist/3aq17wFY4QQ7xFntD4T6vI",
+                "instagram": "https://instagram.com/p1h_official"
+            }
+        },
+
+        "paul-mccartney": {
+            "nombre": "Paul McCartney",
+            "genero": "Rock, Pop Rock, Soft Rock",
+            "añosActivos": "1957-presente",
+            "origen": "Liverpool, Inglaterra",
+            "miembros": "Paul McCartney",
+            "fotoPerfil": "../Archivos/Artistas/Paul McCartney.jpg",
+            "biografia": "Paul McCartney es un músico, cantante y compositor británico ampliamente reconocido como una de las figuras más importantes de la historia de la música popular. Alcanzó fama mundial como integrante de The Beatles y posteriormente desarrolló una exitosa carrera solista y junto a Wings. Autor de algunas de las canciones más influyentes de todos los tiempos, ha explorado estilos que van desde el rock y el pop hasta la música clásica y experimental. Su legado artístico continúa creciendo tras décadas de innovación, éxito comercial e impacto cultural.",
+            "seguidores": "15.300.000",
+            "redes": {
+                "spotify": "https://open.spotify.com/artist/4STHEaNw4mPZ2tzheohgXB",
+                "instagram": "https://instagram.com/paulmccartney"
+            }
+        },
+
+        "taeyong": {
+            "nombre": "TAEYONG",
+            "genero": "K-Pop, Hip Hop, R&B",
+            "añosActivos": "2016-presente",
+            "origen": "Seúl, Corea del Sur",
+            "miembros": "TAEYONG",
+            "fotoPerfil": "../Archivos/Artistas/TAEYONG.jpg",
+            "biografia": "TAEYONG es un rapero, cantante, compositor y bailarín surcoreano conocido por ser líder de NCT y una de las figuras más destacadas de SM Entertainment. Reconocido por su creatividad artística, su presencia escénica y sus habilidades como intérprete, ha participado activamente en la composición y producción de numerosas canciones. Su carrera solista le permitió explorar sonidos más personales dentro del hip hop, el R&B y el pop experimental. Gracias a su versatilidad y constante evolución, se ha consolidado como uno de los artistas más influyentes de su generación.",
+            "seguidores": "6.800.000",
+            "redes": {
+                "spotify": "https://open.spotify.com/artist/3HqSLMAZ3g3d5poNaI7GOU",
+                "instagram": "https://instagram.com/taeoxo_nct"
+            }
+        },
+
+        "tame-impala": {
+            "nombre": "Tame Impala",
+            "genero": "Psychedelic Rock, Neo Psychedelia, Synth Pop",
+            "añosActivos": "2007-presente",
+            "origen": "Perth, Australia",
+            "miembros": "Kevin Parker",
+            "fotoPerfil": "../Archivos/Artistas/Tame Impala.jpg",
+            "biografia": "Tame Impala es el proyecto musical del cantante, compositor y productor australiano Kevin Parker. Con una propuesta basada en la psicodelia moderna, sintetizadores envolventes y una producción meticulosa, el proyecto se convirtió en una de las referencias más importantes del rock alternativo contemporáneo. Álbumes como Lonerism, Currents y The Slow Rush recibieron elogios de la crítica y alcanzaron una enorme popularidad internacional. La capacidad de Parker para combinar elementos de rock, pop y electrónica ha influido en numerosos artistas de distintas generaciones.",
+            "seguidores": "14.900.000",
+            "redes": {
+                "spotify": "https://open.spotify.com/artist/5INjqkS1o8h1imAzPqGZBb",
+                "instagram": "https://instagram.com/tameimpala"
+            }
+        },
+
+        "zerobaseone": {
+            "nombre": "ZEROBASEONE",
+            "genero": "K-Pop, Dance Pop, Pop",
+            "añosActivos": "2023-presente",
+            "origen": "Seúl, Corea del Sur",
+            "miembros": "Sung Hanbin, Kim Jiwoong, Zhang Hao, Seok Matthew, Kim Taerae, Ricky, Kim Gyuvin, Park Gunwook, Han Yujin",
+            "fotoPerfil": "../Archivos/Artistas/ZEROBASEONE.jpg",
+            "biografia": "ZEROBASEONE, también conocido como ZB1, es un grupo masculino surcoreano formado a través del programa Boys Planet en 2023. Desde su debut lograron un éxito inmediato gracias a una combinación de talento vocal, actuaciones dinámicas y una fuerte conexión con el público internacional. Su música se caracteriza por fusionar pop moderno, dance y elementos electrónicos, acompañados por conceptos visuales cuidadosamente elaborados. Con ventas millonarias y una rápida expansión global, ZEROBASEONE se ha establecido como uno de los grupos más prometedores de la quinta generación del K-Pop.",
+            "seguidores": "8.600.000",
+            "redes": {
+                "spotify": "https://open.spotify.com/artist/7cjg7EkeZy3OI5o9Qthc6n",
+                "instagram": "https://instagram.com/zb1official"
+            }
+        }
+    }
+}
+

@@ -1,0 +1,282 @@
+{
+    "novedades":  [
+                      {
+                          "id":  "ascend-zerobaseone",
+                          "titulo":  "Ascend-",
+                          "artista":  "ZEROBASEONE",
+                          "cover":  "../Archivos/Albumes/ZEROBASEONE/Ascend--ZEROBASEONE_album_cover.jpg"
+                      },
+                      {
+                          "id":  "dont-be-dumb-a-ap-rocky",
+                          "titulo":  "Don't Be Dumb",
+                          "artista":  "A$AP Rocky",
+                          "cover":  "../Archivos/Albumes/A$ap Rocky/Dont Be Dumb-A$ap Rocky_album_cover.jpg"
+                      },
+                      {
+                          "id":  "greengreen-cortis",
+                          "titulo":  "GREENGREEN",
+                          "artista":  "Cortis",
+                          "cover":  "../Archivos/Albumes/Cortis/GREENGREEN-Cortis_album_cover.jpg"
+                      },
+                      {
+                          "id":  "habibti-drake",
+                          "titulo":  "HABIBTI",
+                          "artista":  "Drake",
+                          "cover":  "../Archivos/Albumes/Drake/HABIBTI-Drake_album_cover.jpg"
+                      },
+                      {
+                          "id":  "iceman-drake",
+                          "titulo":  "ICEMAN",
+                          "artista":  "Drake",
+                          "cover":  "../Archivos/Albumes/Drake/ICEMAN-Drake_album_cover.jpg"
+                      },
+                      {
+                          "id":  "lemonade-aespa",
+                          "titulo":  "LEMONADE",
+                          "artista":  "Aespa",
+                          "cover":  "../Archivos/Albumes/Aespa/LEMONADE-Aespa_album_cover.jpg"
+                      },
+                      {
+                          "id":  "pureflow-le-sserafim",
+                          "titulo":  "'PUREFLOW', Pt. 1",
+                          "artista":  "LE SSERAFIM",
+                          "cover":  "../Archivos/Albumes/LE SSERAFIM/PUREFLOW-LE SSERAFIM_album_cover.jpg"
+                      },
+                      {
+                          "id":  "the-boys-of-dungeon-lane-paul-mccartney",
+                          "titulo":  "The Boys of Dungeon Lane",
+                          "artista":  "Paul McCartney",
+                          "cover":  "../Archivos/Albumes/Paul McCartney/The Boys of Dungeon Lane-Paul McCartney_album_cover.jpg"
+                      },
+                      {
+                          "id":  "unique-P1Harmony",
+                          "titulo":  "UNIQUE",
+                          "artista":  "P1Harmony",
+                          "cover":  "../Archivos/Albumes/P1Harmony/UNIQUE-P1Harmony_album_cover.jpg"
+                      },
+                      {
+                          "id":  "wyld-taeyong",
+                          "titulo":  "WYLD",
+                          "artista":  "TAEYONG",
+                          "cover":  "../Archivos/Albumes/TAEYONG/WYLD-TAEYONG_album_cover.jpg"
+                      },
+                      {
+                          "id":  "your-favorite-toy-foo-fighters",
+                          "titulo":  "Your Favorite Toy",
+                          "artista":  "Foo Fighters",
+                          "cover":  "../Archivos/Albumes/Foo Figthers/Your Favorite Toy-Foo Figthers_album_cover.jpg"
+                      }
+                  ],
+    "tendenciasPrincipales":  [
+                                  {
+                                      "id":  "iceman-drake",
+                                      "titulo":  "ICEMAN",
+                                      "artista":  "Drake",
+                                      "meta":  "2026 • Hip-Hop",
+                                      "nota":  "★★★★☆",
+                                      "sinopsis":  "Drake explora nuevas texturas melódicas y reflexiones personales sobre ritmos helados.",
+                                      "cover":  "../Archivos/Albumes/Drake/ICEMAN-Drake_album_cover.jpg"
+                                  },
+                                  {
+                                      "id":  "arirang-bts",
+                                      "titulo":  "ARIRANG",
+                                      "artista":  "BTS",
+                                      "meta":  "2026 • K-Pop",
+                                      "nota":  "★★★★☆",
+                                      "sinopsis":  "Un Álbum vibrante que mezcla sonidos tradicionales con ritmos electrónicos de última generación.",
+                                      "cover":  "../Archivos/Albumes/BTS/ARIRANG-BTS_album_cover.jpg"
+                                  },
+                                  {
+                                      "id":  "dont-tap-the-glass-tyler-the-creator",
+                                      "titulo":  "DON'T TAP THE GLASS",
+                                      "artista":  "Tyler, The Creator",
+                                      "meta":  "2025 • Hip-Hop",
+                                      "nota":  "★★★★☆",
+                                      "sinopsis":  "Tyler redefine los límites del hip-hop con arreglos audaces y texturas sonoras inesperadas.",
+                                      "cover":  "../Archivos/Albumes/Tyler, The Creator/DONT TAP THE GLASS-Tyler, The Creator_album_cover.jpg"
+                                  },
+                                  {
+                                      "id":  "deadbeat-tame-impala",
+                                      "titulo":  "Deadbeat",
+                                      "artista":  "Tame Impala",
+                                      "meta":  "2025 • Indie / Psychedelic",
+                                      "nota":  "★★★☆☆",
+                                      "sinopsis":  "Melodías oníricas y bajos pesados que te transportan directamente a otra dimensión musical.",
+                                      "cover":  "../Archivos/Albumes/Tame Impala/Deadbeat-Tame Impala_album_cover.jpg"
+                                  }
+                              ],
+    "subTendencias":  [
+                          {
+                              "id":  "a-hard-days-night-the-beatles",
+                              "titulo":  "A Hard Day's Night",
+                              "artista":  "The Beatles",
+                              "cover":  "../Archivos/Albumes/The Beatles/A Hard Days Night-The Beatles_album_cover.jpg"
+                          },
+                          {
+                              "id":  "lux-rosalia",
+                              "titulo":  "LUX",
+                              "artista":  "ROSALÍA",
+                              "cover":  "../Archivos/Secciones/Seccion destacados/LUX-ROSALÍA_album_cover.jpg"
+                          },
+                          {
+                              "id":  "llegando-los-monos-sumo",
+                              "titulo":  "Llegando Los Monos",
+                              "artista":  "Sumo",
+                              "cover":  "../Archivos/Albumes/Sumo/Llegando Los Monos-Sumo_album_cover.jpg"
+                          },
+                          {
+                              "id":  "music-playboi-carti",
+                              "titulo":  "MUSIC",
+                              "artista":  "Playboi Carti",
+                              "cover":  "../Archivos/Albumes/Playboi Carti/MUSIC-Playboi Carti_album_cover.jpg"
+                          },
+                          {
+                              "id":  "the-queen-is-dead-the-smiths",
+                              "titulo":  "The Queen Is Dead",
+                              "artista":  "The Smiths",
+                              "cover":  "../Archivos/Albumes/The Smiths/The Queen Is Dead-The Smiths_album_cover.jpg"
+                          },
+                          {
+                              "id":  "the-romantic-bruno-mars",
+                              "titulo":  "The Romantic",
+                              "artista":  "Bruno Mars",
+                              "cover":  "../Archivos/Albumes/Bruno Mars/The Romantic-Bruno Mars_album_cover.jpg"
+                          }
+                      ],
+    "resenas":  [
+                    {
+                        "id": "iceman-drake",
+                        "generos":  "Hip-Hop",
+                        "album":  "ICEMAN",
+                        "likes":  "128",
+                        "comentarios":  "24",
+                        "texto":  "Esto es exactamente lo que buscas cuando quieres escuchar al Drake de las 4 de la mañana. Iceman nos devuelve al Drizzy más crudo, flotando sobre un beat minimalista, frío y reflexivo. No hay ganchos comerciales para la radio; es solo él escupiendo barras sobre la fama, la desconfianza y la soledad en la cima. La producción tiene esa atmósfera brumosa y limpia que encaja perfecto con el título. Si te gusta su faceta más introspectiva, este tema cumple con creces.",
+                        "artista":  "Drake",
+                        "anio":  "2024",
+                        "titulo":  "ICEMAN",
+                        "colorUsuario":  "#1565c0",
+                        "cover":  "../Archivos/Albumes/Drake/ICEMAN-Drake_album_cover.jpg",
+                        "usuario":  "usuario_uno",
+                        "nota":  "8/10"
+                    },
+                    {
+                        "id": "greengreen-cortis",
+                        "generos":  "Trap, Industrial",
+                        "album":  "GREENGREEN",
+                        "likes":  "85",
+                        "comentarios":  "12",
+                        "texto":  "El junte entre la estética de Greengreen y la producción underground y afilada de Cortis funciona como un tiro. Cortis demuestra por qué es un productor a tener en el radar si te gusta el sonido pesado, el trap con tintes industriales y los bajos que te retumban en el pecho. La pista es oscura, adictiva y con un ritmo sucio. Greengreen se monta con una actitud destructiva que encaja a la perfección. Ideal para romper los parlantes del auto.",
+                        "artista":  "Cortis",
+                        "anio":  "2024",
+                        "titulo":  "GREENGREEN",
+                        "colorUsuario":  "#e91e63",
+                        "cover":  "../Archivos/Albumes/Cortis/GREENGREEN-Cortis_album_cover.jpg",
+                        "usuario":  "usuario_dos",
+                        "nota":  "7.5/10"
+                    },
+                    {
+                        "id": "arirang-bts",
+                        "generos":  "K-Pop, Pop",
+                        "album":  "ARIRANG",
+                        "likes":  "412",
+                        "comentarios":  "156",
+                        "texto":  "Meter la maquinaria hipercomercial del K-pop dentro de una pieza con el peso histórico y emocional de \"Arirang\" fue una idea terrible. Lo que originalmente es una melodía folclórica coreana desgarradora, acá se convierte en un híbrido genérico con bases pop sobreproducidas y un exceso de autotune que le quita humanidad a las voces. Se nota demasiado que está pensado como un producto de exportación masiva; se siente plástico, vacío y artificial desde el primer minuto.",
+                        "artista":  "BTS",
+                        "anio":  "2024",
+                        "titulo":  "ARIRANG",
+                        "colorUsuario":  "#4a148c",
+                        "cover":  "../Archivos/Albumes/BTS/ARIRANG-BTS_album_cover.jpg",
+                        "usuario":  "usuario_tres",
+                        "nota":  "3/10"
+                    },
+                    {
+                        "id": "dont-be-dumb-asap-rocky",
+                        "generos":  "Hip-Hop, Rap",
+                        "album":  "Don't Be Dumb",
+                        "likes":  "320",
+                        "comentarios":  "45",
+                        "texto":  "La espera fue eterna, pero Flacko demostró que juega en su propia liga. Es una obra maestra de la producción experimental en el rap mainstream. Rocky se olvida de las estructuras comerciales de TikTok y nos regala un viaje oscuro, denso, lleno de samples extraños y texturas psicodélicas. Con la mano de Metro Boomin y Pharrell, el disco suena sucio pero lujoso a la vez. No es fácil de digerir a la primera, pero es lo más ambicioso del hip-hop reciente.",
+                        "artista":  "A$ap Rocky",
+                        "anio":  "2024",
+                        "titulo":  "Don't Be Dumb",
+                        "colorUsuario":  "#00796b",
+                        "cover":  "../Archivos/Albumes/A$ap Rocky/Dont Be Dumb-A$ap Rocky_album_cover.jpg",
+                        "usuario":  "usuario_cuatro",
+                        "nota":  "9.5/10"
+                    }
+                ],
+    "artistas":  [
+                     {
+                         "id":  "blur",
+                         "nombre":  "Blur",
+                         "genero":  "Britpop",
+                         "foto":  "../Archivos/Artistas/Blur.jpg"
+                     },
+                     {
+                         "id":  "david-bowie",
+                         "nombre":  "David Bowie",
+                         "genero":  "Glam / Art Rock",
+                         "foto":  "../Archivos/Artistas/David Bowie.jpg"
+                     },
+                     {
+                         "id":  "enhypen",
+                         "nombre":  "Enhypen",
+                         "genero":  "K-Pop",
+                         "foto":  "../Archivos/Artistas/Enhypen.jpg"
+                     },
+                     {
+                         "id":  "jamiroquai",
+                         "nombre":  "Jamiroquai",
+                         "genero":  "Funk / Acid Jazz",
+                         "foto":  "../Archivos/Artistas/Jamiroquai.jpg"
+                     },
+                     {
+                         "id":  "jeff-buckley",
+                         "nombre":  "Jeff Buckley",
+                         "genero":  "Alternative Rock",
+                         "foto":  "../Archivos/Artistas/Jeff Buckley.jpg"
+                     },
+                     {
+                         "id":  "kanye-west",
+                         "nombre":  "Kanye West",
+                         "genero":  "Hip-Hop",
+                         "foto":  "../Archivos/Artistas/Kanye West.jpg"
+                     },
+                     {
+                         "id":  "kendrick-lamar",
+                         "nombre":  "Kendrick Lamar",
+                         "genero":  "Hip-Hop / Rap",
+                         "foto":  "../Archivos/Artistas/Kendrick Lamar.jpg"
+                     },
+                     {
+                         "id":  "mac-demarco",
+                         "nombre":  "Mac DeMarco",
+                         "genero":  "Indie Rock",
+                         "foto":  "../Archivos/Artistas/Mac DeMarco.jpg"
+                     },
+                     {
+                         "id":  "oasis",
+                         "nombre":  "Oasis",
+                         "genero":  "Britpop",
+                         "foto":  "../Archivos/Artistas/Oasis.jpg"
+                     },
+                     {
+                         "id":  "sabrina-carpenter",
+                         "nombre":  "Sabrina Carpenter",
+                         "genero":  "Pop",
+                         "foto":  "../Archivos/Artistas/Sabrina Carpenter.jpg"
+                     },
+                     {
+                         "id":  "txt",
+                         "nombre":  "TOMORROW X TOGETHER",
+                         "genero":  "K-Pop",
+                         "foto":  "../Archivos/Artistas/TOMORROW X TOGETHER.jpg"
+                     },
+                     {
+                         "id":  "the-smiths",
+                         "nombre":  "The Smiths",
+                         "genero":  "Post-Punk / Indie",
+                         "foto":  "../Archivos/Artistas/The Smiths.jpg"
+                     }
+                 ]
+}
